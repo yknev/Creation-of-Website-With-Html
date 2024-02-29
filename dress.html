@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" All clothes stitches by Meghana tailors"
+    />
+    <title>Building a website with html</title>
+
+    <link rel="shortcut icon" href="fav.png" type="image/png">
+    <style>
+      #mainheader {
+        background-color:darkmagenta;
+      }
+
+      nav {
+        height: 40px;
+        width: 1000px;
+        margin: 0 auto 20px;
+      }
+
+      body {
+        background: lavenderblush;
+        background-image: url('pattern5.jpg');
+      }
+
+      h1 {
+        color: mediumslateblue;
+        font-weight: bold;
+      }
+
+      div {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #leftmenu {
+        float: left;
+        width: 30%;
+        margin-bottom: 20px;
+      }
+
+      .searchbox {
+        padding: 5px;
+        margin: 10px 10px;
+        width: 200px;
+      }
+
+      #main {
+        float: right;
+        width: 70%;
+        margin-bottom: 20px;
+        color:rgb(38, 63, 5);
+      }
+
+      footer {
+        clear: both;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="mainheader">
+      <nav><img src="data:image/jpeg;base64,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" alt="logo" height="40px"/>
+</nav>
+    </header>
+
+    <div width="1000px" margin-left="auto" margin-right="auto">
+      <aside id="leftmenu">
+        <a href="home.html"><img src="logo1.jpg" alt="" style="border-radius: 100px 100px 100px 100px"/></a>
+        <header>
+          <h4 style="text-align: center">Types of stitches we do</h4>
+        </header>
+
+        <input type="search" class="searchbox" placeholder="search our store" />
+      </aside>
+
+      <main id="main" style="background-color:snow">
+          <a href="https://media.istockphoto.com/id/646643696/photo/overhead-shot-of-a-fashion-designer.jpg?s=612x612&w=0&k=20&c=CsnfgYm4xUfoEVIvp0DxznIWGKFoWftzCVzmuff4w4U=" alt="" width="850px" height="770px">
+        <img src="https://media.istockphoto.com/id/646643696/photo/overhead-shot-of-a-fashion-designer.jpg?s=612x612&w=0&k=20&c=CsnfgYm4xUfoEVIvp0DxznIWGKFoWftzCVzmuff4w4U=" alt="" width="700px" height="350px">
+          </a>
+
+       <p>usually we charge for Dress stitching and other kind of stiching for dress - $ 25.85</p>
+
+       <h3>Description</h3>
+
+        <p>A dress is a garment that covers the body and extends down to varying lengths, worn by people of all genders and ages. Dresses come in a wide range 
+            of styles, from casual to formal, and can be made from various fabrics, including cotton, silk, chiffon, and polyester. Dresses can be sleeveless, 
+            short-sleeved, or long-sleeved, and they can have a variety of necklines, such as V-neck, scoop neck, or boat neck.
+        </p>
+
+         <hr>
+
+        <h4>Key features of a dress include</h4>
+
+        <ol>
+
+            <li>Bodice: The top part of the dress that covers the torso, including the chest and waist. The bodice may be fitted 
+            or loose, depending on the style of the dress.</li>
+
+            <li>Skirt: The lower part of the dress that extends from the waist or hips to the desired length. Skirts can be full,
+                 A-line, pencil, or flared, among other styles.</li>
+
+            <li>Hemline: The bottom edge of the dress, which can be straight, curved, or asymmetrical, depending on the design.</li>
+
+            <li>Closure: Dresses can have various types of closures, such as zippers, buttons, hooks, or ties, located at the back,
+                 side, or front of the dress.</li>
+
+            <li>Sleeves: Some dresses have sleeves that cover part or all of the arms, while others are sleeveless or strapless.</li>
+
+            <li>Embellishments: Dresses can be embellished with lace, beads, sequins, embroidery, or other decorative elements to 
+                enhance their appearance.</li>
+
+            <p>Dresses are versatile garments that can be worn for a wide range of occasions, from casual outings to formal events.
+                 They are available in countless styles and designs, making them a popular choice for people looking to express their
+                  personal style and feel confident and comfortable in their clothing.</p>
+
+        </ol>
+
+          <blockquote>From flowing maxi dresses to sleek little black dresses, each dress tells a story and makes a statement, making it a timeless wardrobe essential.</blockquote>
+   
+      </main>
+
+      <footer>
+        <p>Our address is <address>Meghana tailors - Bustand Road, Genna Tower Center, Guntur, India - 522001 </address></p>
+        <small>since 2002 @meghana kaluturi - All rights reserved</small>
+      </footer>
+    </div>
+  </body>
+</html>
